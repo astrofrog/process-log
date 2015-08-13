@@ -27,9 +27,9 @@ def get_all_stats():
 # before averages work)
 get_all_stats()
 
-new = not os.path.exists('pshistory.db')
+new = not os.path.exists('process-log.db')
 
-conn = sqlite3.connect('pshistory.db')
+conn = sqlite3.connect('process-log.db')
 c = conn.cursor()
 
 if new:
